@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164b40">
+  <meta name="description" content="دليل أسئلة وأجوبة لطلبة القانون: البحوث والامتحانات، مع بحث باللغة العربية وتوضيح المعلومات غير المؤكدة.">
+  <title>دليل الطالب | سؤال وجواب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="sources.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#questions">انتقل إلى الأسئلة</a>
+  <header class="hero">
+    <nav class="topbar wrap" aria-label="التنقل الرئيسي">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✦</span> دليل الطالب</a>
+      <span class="edition">القانون الخاص · S1 · المجموعة A</span>
+    </nav>
+    <div class="intro wrap">
+      <p class="eyebrow">من زحمة الرسائل، إلى وضوح المعلومة</p>
+      <h1>سؤالك هنا.<br><span>والجواب أقرب.</span></h1>
+      <p class="lead">كل ما يخص البحوث والامتحانات في مكان واحد.<br>ابحث بالعربية أو بالدارجة، ووصل للمعلومة بلا تقليب طويل.</p>
+      <div class="hero-bottom"><span>✧ أسئلة مرتّبة، ومصادر مؤرّخة</span><span>الموسم الجامعي 2026 / 2027</span></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="search-panel" aria-label="البحث والتصفية">
+      <label for="search">شنو بغيتي تعرف؟</label>
+      <div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="مثلاً: بحث يحيا، عدد الصفحات، موعد الامتحان…" autocomplete="off"><button id="clear" type="button" hidden>مسح</button></div>
+      <p class="search-hint">البحث يشمل الأسئلة والأجوبة · لا فرق بين أ، إ، آ، ا أو التشكيل</p>
+      <div class="filters">
+        <div class="tabs" role="group" aria-label="نوع الأسئلة">
+          <button type="button" data-category="all" aria-pressed="true">الكل <span id="count-all"></span></button>
+          <button type="button" data-category="research" aria-pressed="false">البحوث <span id="count-research"></span></button>
+          <button type="button" data-category="exam" aria-pressed="false">الامتحانات <span id="count-exam"></span></button>
+        </div>
+        <div class="subject-filter"><label for="subject">المادة</label><select id="subject"><option value="all">جميع المواد</option></select></div>
+      </div>
+    </section>
+    <aside class="notice"><span aria-hidden="true">ⓘ</span><div><strong>دليل للمساعدة، ماشي إعلان رسمي.</strong><p>الأجوبة ملخّصة من محادثة مؤرخة بين 15 أكتوبر و19 نونبر 2026. المواعيد تخص ذلك الموسم، وبعض المعلومات متعارضة. تأكّد دائماً من أستاذ المادة أو إعلان الكلية.</p></div></aside>
+    <section id="questions" aria-labelledby="questions-heading">
+      <div class="section-heading"><div><p class="eyebrow">المعلومة اللي كتقلب عليها</p><h2 id="questions-heading">أسئلة وأجوبة</h2></div><p id="result-count" role="status" aria-live="polite"></p></div>
+      <div id="results"></div>
+      <div id="empty" class="empty" hidden><span aria-hidden="true">✧</span><h3>ما لقيناش نتائج بهاد الكلمات</h3><p>جرّب كلمة أقصر، اسم الأستاذ، أو اختار جميع المواد.</p><button id="reset" type="button">عرض جميع الأسئلة</button></div>
+      <noscript><p class="notice">فعّل JavaScript لعرض الأسئلة والبحث فيها.</p></noscript>
+    </section>
+    <section class="about"><span class="brand-mark" aria-hidden="true">✦</span><div><h2>خطوة بخطوة، حتى للنجاح.</h2><p>بدا بشروط البحث ديال كل مادة، نظّم وقتك حسب آجال التسليم، وخلي وقت كافي للمراجعة. وإذا بقات شي معلومة ما واضحة، تأكّد منها مباشرة مع أستاذ المادة. بالتوفيق للجميع!</p></div></section>
+  </main>
+  <footer class="wrap"><span>دليل الطالب <span aria-hidden="true">✦</span> بالتوفيق فالمراجعة</span><a href="#">العودة للأعلى ↑</a></footer>
+</body>
+</html>
